@@ -1,0 +1,49 @@
+<ion-view title="Visualization" ng-init="init()">
+<ion-header-bar  class="bar-positive">
+    <h1 class="title">Tweet Visualization</h1>
+    
+    </ion-header-bar>
+    <ion-content>
+<div class="row">
+     
+          <div class="col">
+  <label class="item item-input item-select">
+    <div class="input-label">
+      What do you want to analyze?
+    </div>
+      <select ng-model="selectedQuery.value">
+          <option>Primary sources of Twitter data</option>
+            <option>Origin of Tweets</option>
+            <option>Most followed user</option>
+          <option>Most active time zone</option>
+      </select>
+ </label>
+      
+</div>
+   <div class="col">
+                      
+        <button class="button button-balanced" ng-click="showPlot()">
+  Submit
+</button>
+              </div>              
+</div>
+
+             
+          <div class="row">
+           
+
+          <div id="div_plot" class="col hide" style="width: 480px; height: 400px;">
+              
+              </div>
+              </div>
+       <div class="row">
+              <div id="map" class="col hide"> </div>
+    </div>
+        <div class="row">
+              <div id ="div_imageAnalysis" class="col hide">
+              
+              </div>
+          </div>
+
+      </ion-content>
+      </ion-view>

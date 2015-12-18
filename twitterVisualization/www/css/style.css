@@ -1,0 +1,10 @@
+/* Empty. Add your own CSS if you like */
+.hide{
+    display:none;
+}
+
+#map {
+    width: 100%;
+    height: 600px;
+    overflow: scroll;
+}
